@@ -72,34 +72,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home {
-    background-color: rgba(255, 204, 128, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('../images/network-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
     overflow: hidden;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
 }
 
 .home h1 {
     font-size: 4rem;
     font-weight: bold;
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .home p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    color: #555;
+    color: #f0f0f0;
     font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-.about { background-color: rgba(225, 190, 231, 0.8); }
-.experience { background-color: rgba(179, 229, 252, 0.8); }
+.about { background-color: rgba(255, 105, 180, 0.8); }
+.experience { background-color: rgba(0, 191, 255, 0.8); }
 .skills { background-color: rgba(255, 255, 255, 0.8); }
-.education { background-color: rgba(248, 187, 208, 0.8); }
-.contact { background-color: rgba(207, 216, 220, 0.8); }
+.education { background-color: rgba(50, 205, 50, 0.8); }
+.contact { background-color: rgba(255, 165, 0, 0.8); }
 
 .center-content {
     display: flex;
@@ -143,7 +167,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     display: inline-block;
     padding: 0 40px;
-    font-size: 3rem;
 }
 
 .skill-item i {
@@ -171,6 +194,20 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     background-color: #222;
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+    .home p {
+        font-size: 1.2rem;
+    }
+    .section h2 {
+        font-size: 2rem;
+    }
 }
 
 .shape {
@@ -209,7 +246,7 @@ footer {
 .contact-icon {
     color: #333;
     margin: 0 15px;
-    font-size: 1rem;
+    font-size: 3rem;
     transition: all 0.3s ease;
 }
 
@@ -223,8 +260,20 @@ footer {
 .contact-icon .fa-github { color: #333; }
 .contact-icon .fa-medium { color: #00ab6c; }
 
-.about { background-color: rgba(255, 105, 180, 0.8); } /* Hot Pink */
-.experience { background-color: rgba(0, 191, 255, 0.8); } /* Deep Sky Blue */
-.skills { background-color: rgba(255, 255, 255, 0.8); } /* White */
-.education { background-color: rgba(50, 205, 50, 0.8); } /* Lime Green */
-.contact { background-color: rgba(255, 165, 0, 0.8); } /* Orange */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+}

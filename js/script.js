@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('a.nav-link').on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
-            var hash = this.hash;
+            const hash = this.hash;
             $('html, body').animate({
                 scrollTop: $(hash).offset().top - 70
             }, 800);
@@ -42,4 +42,30 @@ $(document).ready(function () {
     // Set the animation duration based on the total width
     const animationDuration = totalWidth / 100; // Adjust the speed as needed
     skillsTrack.style.animationDuration = `${animationDuration}s`;
+
+    // Particle animation
+    const home = document.querySelector('.home');
+    
+    function createParticle() {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        const size = Math.random() * 5 + 2;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        
+        const duration = Math.random() * 20 + 10;
+        particle.style.animation = `float ${duration}s linear infinite`;
+        
+        home.appendChild(particle);
+        
+        setTimeout(() => {
+            particle.remove();
+        }, duration * 1000);
+    }
+    
+    setInterval(createParticle, 300);
 });

@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahil Diwakar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bangers&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="70">
-    <header class="bg-dark text-white p-3">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
                 <a class="navbar-brand" href="#home">Sahil Diwakar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,26 +27,21 @@
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="home" class="section home text-center text-white d-flex align-items-center">
-        <div class="container">
+    <section id="home" class="section home">
+        <div class="home-content">
             <h1 class="display-4 fade-in-out">Sahil Diwakar</h1>
-            <p class="lead">Dynamic Engineering Leader | Driving Innovation & High-Performance Teams</p>
-        </div>
-        <div class="shape shape-bottom">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.49,29.2C914.27,9.57,840.69,0,766.88,0c-69.33,0-137,14.25-203.05,29.2C456.51,66.6,370.7,117.09,266.28,124.42,194,130.32,113.4,94.61,53.54,53.35,38.58,43,20.74,33.11,0,25.53V120H1200V95.24C1154.79,60.48,1075.63,45.55,985.49,29.2Z" class="shape-fill"></path>
-            </svg>
+            <p>Dynamic Engineering Leader | Driving Innovation & High-Performance Teams</p>
         </div>
     </section>
 
-    <section id="about" class="section about py-5">
+    <section id="about" class="section about">
         <div class="container">
-            <h2 class="text-center">About Me</h2>
-            <p class="text-center">Results-driven engineering leader with over a decade of experience spearheading innovation and leading high-performance teams to deliver impactful solutions. Strategic thinker with a hands-on approach, bridging technical and business perspectives for seamless alignment and successful outcomes. Proven track record of increasing EBITDA, enhancing project delivery speed, and expanding team capacities.</p>
+            <h2>About Me</h2>
+            <p>Results-driven engineering leader with over a decade of experience spearheading innovation and leading high-performance teams to deliver impactful solutions. Strategic thinker with a hands-on approach, bridging technical and business perspectives for seamless alignment and successful outcomes. Proven track record of increasing EBITDA, enhancing project delivery speed, and expanding team capacities.</p>
         </div>
     </section>
 
@@ -134,63 +128,57 @@
         </div>
     </section>
 
-    <section id="skills" class="section skills py-5">
-        <div class="ticker-container">
-            <h2 class="text-center">Skills</h2>
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
             <div class="skills-ticker">
                 <div class="skills-track">
-                    <div class="skill-item"><i class="fab fa-java fa-3x" data-toggle="tooltip" data-placement="top" title="Java"></i></div>
-                    <div class="skill-item"><i class="fab fa-react fa-3x" data-toggle="tooltip" data-placement="top" title="React"></i></div>
-                    <div class="skill-item"><i class="fab fa-node-js fa-3x" data-toggle="tooltip" data-placement="top" title="Node.js"></i></div>
-                    <div class="skill-item"><i class="fas fa-database fa-3x" data-toggle="tooltip" data-placement="top" title="MongoDB"></i></div>
-                    <div class="skill-item"><i class="fab fa-python fa-3x" data-toggle="tooltip" data-placement="top" title="Python"></i></div>
-                    <div class="skill-item"><i class="fab fa-docker fa-3x" data-toggle="tooltip" data-placement="top" title="Docker"></i></div>
-                    <div class="skill-item"><i class="fas fa-server fa-3x" data-toggle="tooltip" data-placement="top" title="PostgreSQL"></i></div>
-                    <div class="skill-item"><i class="fab fa-html5 fa-3x" data-toggle="tooltip" data-placement="top" title="HTML5"></i></div>
-                    <div class="skill-item"><i class="fab fa-css3-alt fa-3x" data-toggle="tooltip" data-placement="top" title="CSS3"></i></div>
-                    <div class="skill-item"><i class="fab fa-js fa-3x" data-toggle="tooltip" data-placement="top" title="JavaScript"></i></div>
-                    <div class="skill-item"><i class="fab fa-angular fa-3x" data-toggle="tooltip" data-placement="top" title="Angular"></i></div>
+                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                    <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                    <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+                    <div class="skill-item"><i class="fas fa-server"></i> AWS</div>
+                    <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="skill-item"><i class="fab fa-angular"></i> Angular</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="section education py-5">
+    <section id="education" class="section education">
         <div class="container">
-            <h2 class="text-center">Education</h2>
+            <h2>Education</h2>
             <ul class="list-unstyled">
-                <li class="mb-2">PGDBM – Business Operations – Welingkar Institute – 2021 – Distinction</li>
-                <li class="mb-2">BE - Electronics and Telecommunication – University of Mumbai - 2012 – First Class</li>
-                <li class="mb-2">Certification - Adaptive Leadership - Acumen</li>
+                <li>PGDBM - Business Operations - Welingkar Institute - 2021 - Distinction</li>
+                <li>BE - Electronics and Telecommunication - University of Mumbai - 2012 - First Class</li>
+                <li>Certification - Adaptive Leadership - Acumen</li>
             </ul>
         </div>
     </section>
 
-    <section id="contact" class="section contact py-5">
-        <div class="container">
-            <h2 class="text-center">Contact</h2>
-            <div class="text-center">
-                <a href="mailto:sahildiwakar91@gmail.com" class="contact-icon"><i class="fas fa-envelope fa-3x"></i></a>
-                <a href="https://linkedin.com/in/sahil-diwakar/" target="_blank" class="contact-icon"><i class="fab fa-linkedin fa-3x"></i></a>
-                <a href="https://github.com/sahild91" target="_blank" class="contact-icon"><i class="fab fa-github fa-3x"></i></a>
-                <a href="https://medium.com/@sahildiwakar91" target="_blank" class="contact-icon"><i class="fab fa-medium fa-3x"></i></a>
+    <section id="contact" class="section contact">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <div>
+                <a href="mailto:sahildiwakar91@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/sahil-diwakar/" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sahild91" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/@sahildiwakar91" target="_blank" class="contact-icon"><i class="fab fa-medium"></i></a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
             <p>&copy; 2024 Sahil Diwakar. All rights reserved.</p>
         </div>
     </footer>
 
-    <div class="shape shape-top">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c48.23,22,104.34,35.88,159.92,32.4C283.94,71,383,13.7,500.29,2.05,606.64-8.59,713.83,14.16,814.75,49.89c80.19,29.92,159.92,62.88,239.87,85.32V0Z" class="shape-fill"></path>
-        </svg>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
