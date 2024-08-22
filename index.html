@@ -3,184 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil Diwakar - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Bangers&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Sahil Diwakar - Engineering Leader & Innovator</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#home">Sahil Diwakar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
         </nav>
     </header>
 
-    <section id="home" class="section home">
-        <div class="home-content">
-            <h1 class="display-4 fade-in-out">Sahil Diwakar</h1>
-            <p>Dynamic Engineering Leader | Driving Innovation & High-Performance Teams</p>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Sahil Diwakar</h1>
+                <p>Engineering Leader & Innovator</p>
+                <p>Bridging Technology and Business for Impactful Solutions</p>
+            </div>
+        </section>
 
-    <section id="about" class="section about">
-        <div class="container">
+        <section id="about">
             <h2>About Me</h2>
-            <p>Results-driven engineering leader with over a decade of experience spearheading innovation and leading high-performance teams to deliver impactful solutions. Strategic thinker with a hands-on approach, bridging technical and business perspectives for seamless alignment and successful outcomes. Proven track record of increasing EBITDA, enhancing project delivery speed, and expanding team capacities.</p>
-        </div>
-    </section>
+            <p>Dynamic Engineering Leader with over a decade of experience spearheading innovation and leading high-performance teams to deliver impactful solutions. Strategic thinker with a hands-on approach, bridging technical and business perspectives for seamless alignment and successful outcomes.</p>
+        </section>
 
-    <section id="experience" class="section experience py-5">
-        <div class="container">
-            <h2 class="text-center">Experience</h2>
-            <div class="accordion" id="experienceAccordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Evobi Automations Pvt Ltd - Head of Software Engineering (Consultant)
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#experienceAccordion">
-                        <div class="card-body">
-                            <ul>
-                                <li>Increased annual EBITDA by 23% through strategic market positioning and operational optimization.</li>
-                                <li>Enhanced project delivery speed by 12% with the implementation of JIRA for improved collaboration.</li>
-                                <li>Expanded team capacity by 23% and boosted revenue by 15% through effective resource allocation and talent management.</li>
-                                <li>Elevated employee engagement by 20% by prioritizing professional development and creating a supportive work environment.</li>
-                                <li>Secured high-profile clients such as IIT Gandhinagar, ensuring timely project delivery with minimal rework.</li>
-                            </ul>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="masonry-grid experience-container">
+                <div class="masonry-item experience-item">
+                    <h3>Head of Software Engineering</h3>
+                    <h4>Evobi Automations Pvt Ltd</h4>
+                    <p>JUN 2023 - PRESENT</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+                <div class="masonry-item experience-item">
+                    <h3>Head – Software Engineering</h3>
+                    <h4>Bibox Labs Pvt. Ltd.</h4>
+                    <p>JUNE 2023 - PRESENT</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+                <div class="masonry-item experience-item">
+                    <h3>Software Solution Consultant</h3>
+                    <h4>Freelance (Khushiyaan Foundation)</h4>
+                    <p>SEPT 2022 - MAY 2023</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+                <div class="masonry-item experience-item">
+                    <h3>Technology Lead</h3>
+                    <h4>Infosys Limited</h4>
+                    <p>MAY 2013 - AUG 2022</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h2>Core Technologies</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Core Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <span>AngularJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PL/SQL</span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Bibox Labs Pvt. Ltd. - Head – Software Engineering (Consultant)
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#experienceAccordion">
-                        <div class="card-body">
-                            <ul>
-                                <li>Implemented Agile methodologies that enhanced product development efficiency by 14%.</li>
-                                <li>Streamlined bug tracking processes, resulting in a 34% reduction in project issues through Kanban boards and Jira automation.</li>
-                                <li>Led talent acquisition and team development, cultivating a culture of continuous improvement and innovation.</li>
-                                <li>Optimized team performance, managing 10+ web and mobile app developers to consistently achieve project milestones.</li>
-                            </ul>
+                
+                <div class="skill-category">
+                    <h2>Additional Technologies</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>J2EE</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>AJAX</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>JSP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Struts</span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Freelance (Khushiyaan Foundation) - Software Solution Consultant
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#experienceAccordion">
-                        <div class="card-body">
-                            <ul>
-                                <li>Revamped the company's website and backend data structure, improving information management for volunteers, members, and events.</li>
-                                <li>Mentored and trained interns, ensuring high-quality deliverables and fostering a learning environment.</li>
-                            </ul>
+                
+                <div class="skill-category">
+                    <h2>Tools & Technologies</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-industry"></i>
+                            <span>SAP Plant Maintenance</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Oracle PL/SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>UNIX</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-jira"></i>
+                            <span>JIRA</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Agile</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>SDLC</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>SaaS</span>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Infosys Limited - Technology Lead
-                            </button>
-                        </h2>
+                
+                <div class="skill-category">
+                    <h2>Design & Documentation</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Technical Design Documents</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-drafting-compass"></i>
+                            <span>AutoCAD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
                     </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#experienceAccordion">
-                        <div class="card-body">
-                            <ul>
-                                <li>Led the design and implementation of complex technology solutions, significantly enhancing business operations and client satisfaction.</li>
-                                <li>Analyzed business requirements and developed detailed system designs, ensuring alignment with client needs.</li>
-                                <li>Managed cross-functional teams, overseeing end-to-end project delivery across Oracle, UNIX, and J2EE/Struts platforms.</li>
-                                <li>Directed client communications and design discussions, ensuring technical and architectural alignment with client expectations.</li>
-                            </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h2>Soft Skills</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Leadership</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Strategic Thinking</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Client Relations</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Innovation</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Project Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h2>Languages</h2>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>English</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>Hindi</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>Marathi</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>Tamil</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>German (A2)</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-ticker">
-                <div class="skills-track">
-                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
-                    <div class="skill-item"><i class="fab fa-react"></i> React</div>
-                    <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
-                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
-                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
-                    <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
-                    <div class="skill-item"><i class="fas fa-server"></i> AWS</div>
-                    <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
-                    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
-                    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
-                    <div class="skill-item"><i class="fab fa-angular"></i> Angular</div>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="masonry-grid">
+                <div class="masonry-item">
+                    <h3>E-commerce Platform</h3>
+                    <p>Developed a scalable e-commerce platform using MERN stack</p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                    </div>
                 </div>
+                <div class="masonry-item">
+                    <h3>Data Visualization Dashboard</h3>
+                    <p>Created an interactive dashboard for real-time data analysis</p>
+                    <div class="tech-tags">
+                        <span>D3.js</span>
+                        <span>React</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <h3>Mobile App for Fitness Tracking</h3>
+                    <p>Designed and developed a cross-platform mobile app for fitness enthusiasts</p>
+                    <div class="tech-tags">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Redux</span>
+                    </div>
+                </div>
+                <!-- Add more project items as needed -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="education" class="section education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul class="list-unstyled">
-                <li>PGDBM - Business Operations - Welingkar Institute - 2021 - Distinction</li>
-                <li>BE - Electronics and Telecommunication - University of Mumbai - 2012 - First Class</li>
-                <li>Certification - Adaptive Leadership - Acumen</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <div class="container text-center">
-            <h2>Contact</h2>
-            <div>
-                <a href="mailto:sahildiwakar91@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/sahil-diwakar/" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sahild91" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
-                <a href="https://medium.com/@sahildiwakar91" target="_blank" class="contact-icon"><i class="fab fa-medium"></i></a>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Sahil's leadership transformed our engineering team, driving innovation and efficiency."</p>
+                    <p class="testimonial-author">- John Doe, CEO, Tech Innovators</p>
+                </div>
+                <!-- Add more testimonial items as needed -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Sahil Diwakar. All rights reserved.</p>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Sahil Diwakar. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sahil-diwakar" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sahild91" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://medium.com/@sahildiwakar91" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://twitter.com/sahildi" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div id="popup-container" class="popup-container"></div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
